@@ -11,6 +11,20 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        // Main Color Palette
+        'night':'#151316',
+        'raisin-black':'#2D2928',
+        'bone': '#F9F6EE',
+        'ucla-blue': '#2274A5',
+        'poppy':'#DB2B39',
+        'orange':'#F3A712',
+        // Secondary Color Palette
+        'rich-black': '#0d1b2a',
+        'oxford-blue': '#1b263b',
+        'yinmn-blue': '#415a77', 
+        'silver-lake-blue': '#778da9',
+        'platinum': '#e0e1dd',
+
       },
     },
   },

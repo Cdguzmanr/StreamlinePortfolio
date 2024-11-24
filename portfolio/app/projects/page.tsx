@@ -5,7 +5,7 @@ const page = () => {
     <div className='bg-bone h-screen'>
         
         <section className="flex flex-col items-center justify-center h-screen text-center">
-        <h1 className="text-6xl lg:text-8xl font-bold text-night mb-4">About Page</h1>
+        <h1 className="text-6xl lg:text-8xl font-bold text-night mb-4">Projects Page</h1>
         <p className="text-base px-8 lg:text-xl text-poppy mb-8">
           My name is Carlos and I'm a Software Developer <br />
           currently working at Fox Valley Technical College 🧑🏻‍💻

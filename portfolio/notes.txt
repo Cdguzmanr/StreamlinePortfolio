@@ -1,0 +1,29 @@
+** Project creation info **
+run in terminal --> npx create-next-app@latest
+√ What is your project named? ... ./ (this to use main folder's name. Not upper case letters allowed)
+√ Would you like to use TypeScript? ... Yes
+√ Would you like to use ESLint? ... No
+√ Would you like to use Tailwind CSS? ... Yes
+√ Would you like your code inside a `src/` directory? ... No
+√ Would you like to use App Router? (recommended) ... Yes
+√ Would you like to use Turbopack for next dev? ... Yes (New functionality from NextJs 14. It allows to compile faster)
+√ Would you like to customize the default import alias (@/*)? ... Yes 
+√ What import alias would you like configured? ... @/* (use default @/* so just press enter )
+
+** Imports for this project **
+→ Lucide (menu icon): npm install lucide-react
+→ react icons: npm i react-icons
+→ Devicons (developer platforms): npm install --save devicons-react
+→ Page load animations: npm i framer-motion
+→ Font Awesome (only in stable versions of NextJs):
+npm install --save @fortawesome/react-fontawesome
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/free-regular-svg-icons
+npm i --save @fortawesome/free-brands-svg-icons
+
+** General Notes ** 
+→ Terminal command to test proyect: npm run dev  
+→ Shortcut to create new react .tsx file: rafce + tab
+→ To create a different page: add folders inside app with the desired page name (about, contact, etc). Then, create a page.tsx file for each (equivalence to index.html). Call the desired components from the page.tsx files to build the page.
+→ Push to github: (1) git add . | (2) git commit -m "message" | (3) git push 
+
