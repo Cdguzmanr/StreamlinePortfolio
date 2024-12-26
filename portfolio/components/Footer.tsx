@@ -18,7 +18,7 @@ const Footer = () => {
 
   //  React component
   return (
-    <footer id='Footer' className="bg-gradient-to-b from-raisin-black to-night py-8 mx-0 px-0 bottom-0">
+    <footer id='Footer' className="bg-gradient-to-b from-raisin-black to-night py-8 mx-0 px-0 bottom-0 mt-2 lg:mt-0">
       <div className="container mx-auto px-6 lg:px-10">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/2 lg:w-1/3 mb-8">

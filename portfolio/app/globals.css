@@ -40,3 +40,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100%;
 }
+
+#profilecard strong {
+  color: #2274A5;
+}

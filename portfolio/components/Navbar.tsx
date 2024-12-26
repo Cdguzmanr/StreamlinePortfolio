@@ -17,9 +17,9 @@ const Header: React.FC = () => {
         <ul className="hidden md:flex space-x-8">
           {navItems.map((item, index) => 
               <li key={index} className='relative group'>
-                  <a href={item.href} className='text-white hover:font-bold relative'>
+                  <a href={item.href} className='text-white group-hover:font-bold relative'>
                       {item.label}
-                      <span className="absolute left-0 bottom-0 w-full h-0.5 bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></span>
+                      <span className="absolute left-0 bottom-0 w-full h-0.5 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></span>
                   </a>
               </li>
             )}
@@ -57,9 +57,9 @@ const Header: React.FC = () => {
         <ul className="flex flex-col items-center justify-center h-full space-y-8 text-white text-xl">
           {navItems.map((item, index) => 
             <li key={index} className='relative group'>
-                <a href={item.href} className='hover:font-bold relative'>
+                <a href={item.href} className='group-hover:font-bold relative'>
                     {item.label}
-                    <span className="absolute left-0 bottom-0 w-full h-0.5 bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></span>
+                    <span className="absolute left-0 bottom-0 w-full h-0.5 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></span>
                 </a>
             </li>
           )}
