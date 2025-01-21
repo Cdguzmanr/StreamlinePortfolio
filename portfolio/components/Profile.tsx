@@ -4,13 +4,13 @@ import {AiFillLinkedin, AiFillGithub} from "react-icons/ai";
 
 const Profile = () => {
   return (
-    <div className='relative h-auto min-h-screen md:h-screen max-w-full bg-bone'>
+    <div className='relative h-auto md:h-screen max-w-full bg-bone'>
     
     {/* Profile Card */}
-    <div id='Profile' className="relative lg:top-16 bg-gradient-to-b from-raisin-black to-night bg-clip-padding backdrop-filter border text-white flex flex-col items-center justify-center p-6 md:flex-row md:items-start md:p-20 shadow-2xl rounded-xl mx-4 md:mx-10 py-10 md:py-20">
+    <div id='Profile' className="relative lg:top-16 bg-gradient-to-b from-raisin-black to-night bg-clip-padding backdrop-filter border text-white flex flex-col items-center justify-center p-6 md:flex-row md:items-start md:p-20 shadow-2xl rounded-xl mx-4 md:mx-10">
       
       <div className="relative rounded-full w-32 h-32 md:w-80 md:h-80 overflow-hidden">
-        <Image src="/profile-square.jpg" alt="profile picture" className='object-cover' fill />
+        <Image src="/images/profile-square.jpg" alt="profile picture" className='object-cover' fill />
       </div>
 
       <div className="mt-10 md:mt-0 md:ml-10 text-center md:text-left flex flex-col items-center md:items-start">

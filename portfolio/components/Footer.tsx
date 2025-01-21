@@ -1,5 +1,5 @@
 "use client"
-import { articlesData } from "./constants/articlesData";
+import { articlesData } from "./data/articlesData";
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClipboard } from '@fortawesome/free-solid-svg-icons';
 import { FaRegClipboard } from "react-icons/fa";

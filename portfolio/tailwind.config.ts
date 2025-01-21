@@ -18,7 +18,7 @@ export default {
         'ucla-blue': '#2274A5',
         'poppy':'#DB2B39',
         'orange':'#F3A712',
-        // Secondary Color Palette
+        // Backup Color Palette (I didn't like them too much)
         'rich-black': '#0d1b2a',
         'oxford-blue': '#1b263b',
         'yinmn-blue': '#415a77', 

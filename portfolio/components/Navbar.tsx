@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react";
-import { navItems } from '@/components/constants'
+import { navItems } from '@/components/data'
+import Link from 'next/link';
 
 const Header: React.FC = () => {
   const [toggle, setToggle] = useState(false);
@@ -8,23 +9,23 @@ const Header: React.FC = () => {
   return (
     <>
       {/* Navbar */}
-      <nav id="Navbar" className="flex justify-between items-center bg-raisin-black px-6 py-4 relative z-10">
+      <nav id="Navbar" className="flex justify-between items-center bg-raisin-black px-6 py-4 lg:py-6 md:px-32 relative z-10">
         {/* Logo */}
-        <a href="/">
+        <Link href="/" className="">
           <h1 className="text-2xl rubic-bold text-white tracking-tight">Carlos Guzman</h1>
-        </a>
+        </Link>
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8">
           {navItems.map((item, index) => 
-              <li key={index} className='relative group'>
-                  <a href={item.href} className='text-white group-hover:font-bold relative'>
-                      {item.label}
-                      <span className="absolute left-0 bottom-0 w-full h-0.5 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></span>
-                  </a>
+            <Link href={item.href} key={index}>
+              <li className="group-hover:font-bold relative text-white">
+                {item.label}
+                <span className="absolute left-0 bottom-0 w-full h-0.5 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></span>
               </li>
+            </Link>
             )}
         </ul>
-
+        
         {/* Hamburger Icon */}
         <button
           className="md:hidden flex flex-col space-y-1"

@@ -1,0 +1,48 @@
+import React from "react";
+import ProjectCard from "./ProjectCard";
+import { Project } from "./IProject";
+
+// Import a carousel library, such as react-slick
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+interface ProjectsCarouselProps {
+  projects: Project[];
+}
+
+const ProjectsCarousel: React.FC<ProjectsCarouselProps> = ({ projects }) => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
+  return (
+    <Slider {...settings}>
+      {projects.map((project) => (
+        <div key={project.id} className="p-4 h-full">
+          <ProjectCard project={project} />
+        </div>
+      ))}
+    </Slider>
+  );
+};
+
+export default ProjectsCarousel;

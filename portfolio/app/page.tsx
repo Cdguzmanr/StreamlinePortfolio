@@ -1,13 +1,18 @@
 import Image from "next/image";
-import Home from '../components/Home';
-import Profile from '../components/Profile';
+import Home from '@/components/Home';
+import Hero from "@/components/Hero"
+import Profile from "@/components/Profile";
+import Skills from "@/components/Skills";
+import ProjectsSection from "@/components/ProjectsSection";
 
 export default function Page() {
   return (
     <div>
-      <Home />
-
+      <Hero/>
       <Profile/>
+      <Skills/>
+      <ProjectsSection/>
+      
     </div>
   );
 }

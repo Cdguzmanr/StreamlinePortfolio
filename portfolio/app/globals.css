@@ -44,3 +44,8 @@ body {
 #profilecard strong {
   color: #2274A5;
 }
+
+.outlined-text {
+  filter: drop-shadow(1px 1px black) drop-shadow(-1px -1px black) drop-shadow(1px -1px black) drop-shadow(-1px 1px black);
+  color: #F9F6EE;
+}

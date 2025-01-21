@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer";
-
+import { Poppins, Raleway, Playfair_Display } from "next/font/google";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
