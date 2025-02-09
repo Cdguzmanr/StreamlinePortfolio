@@ -51,11 +51,11 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`absolute top-0 left-0 w-full bg-gradient-to-b from-raisin-black to-night transition-height duration-300 overflow-hidden ${
-          toggle ? "h-[calc(100vh-4rem)]" : "h-0"
+        className={`z-10 top-12 left-0 w-full bg-gradient-to-b from-raisin-black to-night transition-height duration-300 overflow-hidden overscroll-none ${
+          toggle ? "h-[calc(100vh-32rem)]" : "h-0"
         }`}
       >
-        <ul className="flex flex-col items-center justify-center h-full space-y-8 text-white text-xl">
+        <ul className="flex flex-col py-14 items-center justify-center h-auto space-y-8 text-white text-xl">
           {navItems.map((item, index) => 
             <li key={index} className='relative group'>
                 <a href={item.href} className='group-hover:font-bold relative'>

@@ -37,7 +37,8 @@ const ProjectsCarousel: React.FC<ProjectsCarouselProps> = ({ projects }) => {
   return (
     <Slider {...settings}>
       {projects.map((project) => (
-        <div key={project.id} className="p-4 h-full">
+        // The Card has a max limit of 4 lines of text for the description, which fits perfectly in 455 pixels
+        <div key={project.id} className="p-4 h-[455px]"> 
           <ProjectCard project={project} />
         </div>
       ))}

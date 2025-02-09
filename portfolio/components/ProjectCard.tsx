@@ -14,6 +14,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     router.push(`/projects/${project.title.toLowerCase().replace(/\s+/g, "-")}`);
   };
 
+  const handleFilterCategory = (category: string) => {
+    // Redirect to the Projects page with the selected category as a query parameter.
+    // router.push(`/projects?filter=${category.toLowerCase()}`);
+    router.push(`/projects`);
+  };
+
   return (
     <div className="bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between h-full">
       <div>
@@ -31,16 +37,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           {project.categories.map((category, index) => (
             <button
               key={index}
-              className="bg-orange text-white text-xs font-semibold rounded-full px-3 py-1 m-1 hover:bg-poppy transition-colors duration-300"
-              onClick={() =>
-                router.push(`/projects?filter=${category.toLowerCase()}`)
-              }
+              className="bg-orange text-white text-xs font-semibold rounded-full px-3 py-1 m-1 hover:bg-poppy transition-colors duration-300 cursor-pointer"
+              onClick={() => handleFilterCategory(category)}
             >
               {category}
             </button>
           ))}
         </div>
-        <p className="text-raisin-black mt-2 text-sm">{project.summary}</p>
+        <p className="text-raisin-black mt-2 text-sm line-clamp-4">{project.summary}</p>
       </div>
       <button
         onClick={handleViewProject}

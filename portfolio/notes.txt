@@ -21,7 +21,7 @@ npm i --save @fortawesome/free-solid-svg-icons
 npm i --save @fortawesome/free-regular-svg-icons
 npm i --save @fortawesome/free-brands-svg-icons
 → Lottie Animations: npm install --save react-lottie
-→ Carousel component: npm install react-slick --save
+→ Carousel component: npm install --save @types/react-slick react-slick slick-carousel
 
 ** General Notes ** 
 → Terminal command to test proyect: npm run dev  
