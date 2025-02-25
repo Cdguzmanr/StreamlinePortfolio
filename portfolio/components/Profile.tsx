@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from "next/image";
 import {AiFillLinkedin, AiFillGithub} from "react-icons/ai";
+import { Resume } from "./data/constants";
 
 const Profile = () => {
   return (
@@ -26,7 +27,7 @@ const Profile = () => {
         </p>
 
         <div className="text-3xl flex flex-col md:flex-row gap-8 py-3 items-center">
-          <a href="/Carlos Guzman - Software Developer.pdf" target="_blank" className="bg-ucla-blue text-lg text-white py-2 px-4 rounded hover:scale-105">
+          <a href={Resume} target="_blank" className="bg-ucla-blue text-lg text-white py-2 px-4 rounded hover:scale-105">
             Download Resume
           </a>
           
@@ -39,9 +40,6 @@ const Profile = () => {
             </a>
           </div>
         </div>
-
-
-        
       </div>
     </div>
     </div>

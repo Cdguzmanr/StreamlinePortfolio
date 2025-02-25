@@ -1,52 +1,68 @@
+"use client"
 import React from "react";
-import Link from 'next/link';
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 
 const Hero = () => {
   return (
-    <section className="relative bg-bone overflow-hidden min-h-screen">
-      <div className="container mx-auto flex flex-col md:flex-row items-center py-16 md:px-12 text-center md:text-start">
+    <section className="relative bg-bone min-h-screen flex items-center justify-center overflow-hidden">
+      
+      {/* Decorative Background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-night to-bone opacity-10"></div>
+      <div className="absolute top-0 left-0 w-48 h-48 bg-poppy opacity-30 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 right-0 w-64 h-64 bg-ucla-blue opacity-30 rounded-full blur-3xl"></div>
+
+      <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center text-center md:text-start px-6 md:px-12 py-16">
+        
         {/* Text Content */}
-        <div className="md:w-3/4 text-black">
-          <h1 className="text-2xl md:text-4xl font-bold">
+        <motion.div 
+          className="md:w-3/4 text-black"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
             Hi, I'm <span className="text-poppy">Carlos Guzman</span>,
           </h1>
-          <p className="text-5xl md:text-8xl font-bold my-2 md:my-8 ">
+          
+          <p className="text-5xl md:text-8xl font-bold mt-2 md:mt-6 leading-none">
             <span className="text-black">Full Stack</span> <br />
-            <span className="outlined-text">Software Engineer</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-poppy to-orange">
+              Software Engineer
+            </span>
           </p>
 
-          {/* Buttons */ }
-          <div className="mt-6 flex space-x-4 justify-center md:justify-normal">
+          {/* Buttons */}
+          <div className="mt-8 flex space-x-4 justify-center md:justify-start">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.3 }}
+            >
+              <Link href="/projects">
+                <button className="px-6 py-3 bg-black text-white font-semibold rounded-md hover:bg-gray-800 transition-all">
+                  View My Work
+                </button>
+              </Link>
+            </motion.div>
 
-            <Link href="/projects" className="px-6 py-3 bg-black text-white font-semibold rounded-md hover:bg-gray-800">
-              View My Work
-            </Link>
-
-            <Link href="/contact" className="px-6 py-3 bg-white border border-gray-300 text-gray-800 font-semibold rounded-md hover:border-gray-500">
-              Get in Touch
-            </Link>
-            
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.4 }}
+            >
+              <Link href="/contact">
+                <button className="px-6 py-3 bg-white border border-gray-300 text-gray-800 font-semibold rounded-md hover:border-gray-500 transition-all">
+                  Get in Touch
+                </button>
+              </Link>
+            </motion.div>
           </div>
-
-        </div>
-
-        {/* Image */}
-        <div className="md:w-1/2 mt-10 md:mt-0 relative">
-          <div className="rounded-full p-6 md:p-10 relative">
-            <img
-              src="/images/profile_transparent.png"
-              alt="Carlos Guzman"
-              className="rounded-lg "
-            />
-          </div>
-        </div>
+        </motion.div>
 
       </div>
     </section>
-        
-      
-
   );
 };
 

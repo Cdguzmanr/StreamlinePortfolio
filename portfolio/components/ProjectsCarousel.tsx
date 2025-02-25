@@ -1,5 +1,6 @@
 import React from "react";
-import ProjectCard from "./ProjectCard";
+// import ProjectCard from "./ProjectCard";
+import ProjectCard from "./CardPro";
 import { Project } from "./IProject";
 
 // Import a carousel library, such as react-slick

@@ -1,7 +1,8 @@
 "use client";
 import React, { useState, useMemo, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import ProjectCard from "@/components/ProjectCard";
+// import ProjectCard from "@/components/ProjectCard";
+import ProjectCard from "@/components/CardPro";
 import { projectsData } from "@/components/data/projectsData";
 import { useSearchParams } from "next/navigation";
 
