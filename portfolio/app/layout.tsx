@@ -28,6 +28,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Link preview metadata */}
+        <meta property="og:title" content="Carlos Guzman | Portfolio" />
+        <meta property="og:description" content="Check out my latest projects, skills, and professional experience. Let's connect!" />
+        <meta property="og:image" content="/profile-square.jpg" />
+        <meta property="og:url" content="https://carlosguzmanr.com/" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </head>
+
       <body 
         id="page"
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
