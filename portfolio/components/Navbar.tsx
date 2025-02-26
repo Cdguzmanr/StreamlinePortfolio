@@ -17,14 +17,12 @@ const Navbar: React.FC = () => {
     }
   }, [toggle]);
 
-  const closeMenu = () => setToggle(false);
-
   return (
     <nav id="Navbar" className="">
       {/* Navbar */}
       <div className="flex relative justify-between items-center bg-raisin-black px-6 py-4 lg:py-6 md:px-32  z-50">
         {/* Logo */}
-        <Link href="/">
+        <Link href="/" onClick={() => setToggle(false)}>
           <h1 className="text-2xl rubic-bold text-white tracking-tight">
             Carlos Guzman
           </h1>
@@ -32,7 +30,7 @@ const Navbar: React.FC = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8">
           {navItems.map((item, index) => (
-            <Link href={item.href} key={index} onClick={closeMenu}>
+            <Link href={item.href} key={index}>
               <li className="group-hover:font-bold relative text-white">
                 {item.label}
                 <span className="absolute left-0 bottom-0 w-full h-0.5 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></span>
@@ -72,7 +70,7 @@ const Navbar: React.FC = () => {
         <ul className="flex flex-col py-aut items-center justify-center space-y-8 text-white text-2xl">
           {navItems.map((item, index) => (
             <li key={index} className="relative group">
-              <Link href={item.href} className="group-hover:font-bold relative">
+              <Link href={item.href} className="group-hover:font-bold relative" onClick={() => setToggle(false)}>
                 {item.label}
                 <span className="absolute left-0 bottom-0 w-full h-0.5 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></span>
               </Link>
