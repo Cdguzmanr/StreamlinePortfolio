@@ -79,7 +79,7 @@ const Navbar: React.FC = () => {
         </ul>
 
         {/* Divider & Mini Menu */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-3/4 flex flex-col items-center bottom-[10vh]" >
+        <div className="absolute left-1/2 transform -translate-x-1/2 w-3/4 flex flex-col items-center bottom-[11vh]" >
           <hr className="border-gray-500 my-6 w-full" />
           <div className="flex items-center justify-center space-x-6">
             <a

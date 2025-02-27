@@ -11,7 +11,7 @@ const Footer = () => {
   // Copy functionality
   const [isCopied, setIsCopied] = useState(false);
   const handleCopy = () => {
-    navigator.clipboard.writeText('cguzmanr17@gmail.com');
+    navigator.clipboard.writeText("cguzmanr17@gmail.com");
     setIsCopied(true);
     setTimeout(() => setIsCopied(false), 2000); // Reset after 2 seconds
   };
