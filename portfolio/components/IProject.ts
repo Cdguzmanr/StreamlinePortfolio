@@ -1,6 +1,7 @@
 // src/types.ts
 export interface Project {
     id: number,
+    featured: boolean, // display at the "ProjectsSection" on the Home page
     title: string;
     image: string;
     categories: Array<string>;

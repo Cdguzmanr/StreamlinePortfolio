@@ -4,13 +4,16 @@ import ProjectsCarousel from "./ProjectsCarousel";
 import { projectsData } from "./data/projectsData";
 
 const ProjectsSection: React.FC = () => {
+  // Filter featured projects
+  const featuredProjects = projectsData.filter(project => project.featured);
+
   return (
     <section id="projects" className="py-16 bg-bone">
       <div className="max-w-6xl mx-auto px-6 h-full">
         <h2 className="text-3xl font-bold text-center text-night mb-8">
-          My Projects
+          Featured Work
         </h2>
-        <ProjectsCarousel projects={projectsData}/>
+        <ProjectsCarousel projects={featuredProjects} />
         <div className="text-center mt-8">
           <p className="text-raisin-black text-lg mb-4">
             Like what you see? Explore all my projects and discover more of my work.

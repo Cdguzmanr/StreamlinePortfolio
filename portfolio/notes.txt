@@ -29,4 +29,5 @@ npm i --save @fortawesome/free-brands-svg-icons
 → Shortcut to create new react .tsx file: rafce + tab
 → To create a different page: add folders inside app with the desired page name (about, contact, etc). Then, create a page.tsx file for each (equivalence to index.html). Call the desired components from the page.tsx files to build the page.
 → Push to github: (1) git add . | (2) git commit -m "message" | (3) git push 
+→ Create a new code snippet (used for 'proj' template): trl+Shift+ ->  'Snippets: Configure Snippets' -> typescript.json -> Add a new item to the Snippets array.
 
