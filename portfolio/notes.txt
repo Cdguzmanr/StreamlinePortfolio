@@ -11,7 +11,7 @@ run in terminal --> npx create-next-app@latest
 √ What import alias would you like configured? ... @/* (use default @/* so just press enter )
 
 ** Imports for this project **
-→ Lucide (menu icon): npm install lucide-react
+→ Lucide (menu icon): npm install lucide-react (Not used anymore)
 → react icons: npm i react-icons
 → Devicons (developer platforms): npm install --save devicons-react
 → Page load animations: npm i framer-motion

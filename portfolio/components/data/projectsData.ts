@@ -5,10 +5,10 @@ export const projectsData: Project[] = [
     {
     id: 1,
     featured: true,
-    title: "Unity 3D Game",
+    title: "Uno Park",
     image: "/images/UnoHome.png",
     categories: ["Unity", "API", "C#"],
-    summary: "A fully-featured 3D game developed using C# and Unity game engine.",
+    summary: "Uno Park is a fully-featured 3D game developed using C# and Unity game engine. A re-design of the classic UNO experience.",
     description: `**"Uno Park"** is a 3D Unity game developed as my final project for the Software Development AAS program at Fox Valley Technical College. \n\nWhile most classmates created 2D games and programs, I chose to self-learn *Unity 3D* for a more challenging experience. \n\nMy partner, _[Austin Steffes](https://www.linkedin.com/in/austin-steffes/)_, handled the **server-side backend**, database, and part of the game API using **Microsoft Azure**, while I focused on **Unity development**. This included world modeling, menu design, camera movement, animations, and overall game functionality. \n\nThe game idea was designed around the camera movement and animation. I aimed to showcase a park-themed environment with in-game objects acting as interactive menus for a better immersive experience.`,
     video: "https://www.youtube.com/embed/H7cmYf08RQY?feature=oembed",
     link: "https://github.com/Cdguzmanr/UnoPark-Unity.git"
