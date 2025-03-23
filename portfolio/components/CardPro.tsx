@@ -25,7 +25,8 @@ const CardPro: React.FC<ProjectCardProps> = ({ project }) => {
       <img
         src={project.image}
         alt={project.title}
-        className="relative  mx-4 -mt-6 h-40 overflow-clip rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r"
+        onClick={handleViewProject}
+        className="relative mx-4 -mt-6 h-40 overflow-clip rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r"
       />
       <div className="flex flex-col flex-grow px-6 pt-6 pb-2">
         <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
