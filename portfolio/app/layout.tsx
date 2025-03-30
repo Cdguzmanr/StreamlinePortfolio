@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar"
@@ -40,7 +41,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/*  */}
+        {/* Vercel Web Analytics components */}
+        <Analytics/>
+        <SpeedInsights/>
       </head>
 
       <body 
