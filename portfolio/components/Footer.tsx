@@ -4,6 +4,7 @@ import { articlesData } from "./data/articlesData";
 import { faClipboard } from '@fortawesome/free-solid-svg-icons';
 import { FaRegClipboard } from "react-icons/fa";
 import React, { useState } from "react";
+import { Email } from "@/components/data/constants";
 
 
 const Footer = () => {
@@ -11,14 +12,14 @@ const Footer = () => {
   // Copy functionality
   const [isCopied, setIsCopied] = useState(false);
   const handleCopy = () => {
-    navigator.clipboard.writeText("cguzmanr17@gmail.com");
+    navigator.clipboard.writeText(Email);
     setIsCopied(true);
     setTimeout(() => setIsCopied(false), 2000); // Reset after 2 seconds
   };
 
   //  React component
   return (
-    <footer id='Footer' className="bg-gradient-to-b from-raisin-black to-night py-8 mx-0 px-0 bottom-0 mt-2 lg:mt-0">
+    <footer id='footer' className="bg-gradient-to-b from-raisin-black to-night py-8 mx-0 px-0 bottom-0 ">
       <div className="container mx-auto px-6 lg:px-10">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/2 lg:w-1/3 mb-8">
@@ -40,7 +41,7 @@ const Footer = () => {
                   // Deleted focus functionality: focus:ring-[color] focus:border-[color]
                   className="bg-gray-300 border border-gray-300 text-black text-sm rounded-lg  block w-full px-2.5 py-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 text-left"
                 >
-                  cguzmanr17@gmail.com
+                  {Email}
 
                   {/* Nested Button */}
                   <div 

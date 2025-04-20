@@ -45,6 +45,11 @@ body {
   color: #2274A5;
 }
 
+.selected-item {
+  background-color: #2274A5 !important; 
+  color: white !important;
+}
+
 .outlined-text {
   filter: drop-shadow(1px 1px black) drop-shadow(-1px -1px black) drop-shadow(1px -1px black) drop-shadow(-1px 1px black);
   color: #F9F6EE;
@@ -102,3 +107,8 @@ body {
 .premium-card:hover:after {
   visibility: hidden;
 } */
+
+.slick-prev:before,
+    .slick-next:before {
+        color: black !important;
+    }

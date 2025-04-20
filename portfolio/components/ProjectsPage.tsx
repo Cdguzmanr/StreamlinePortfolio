@@ -66,10 +66,10 @@ const ProjectsPage: React.FC = () => {
   };
 
   return (
-    <section className="py-16 bg-bone min-h-screen">
+    <section className="pt-10 pb-16 bg-bone min-h-screen">
       <div className="max-w-6xl mx-auto px-6">
         {/* Page Title */}
-        <h1 className="text-4xl font-bold text-center text-night mb-8">
+        <h1 className="text-3xl font-bold text-center text-night mb-8">
           My Projects
         </h1>
 

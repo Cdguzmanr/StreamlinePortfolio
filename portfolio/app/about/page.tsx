@@ -1,12 +1,17 @@
 import React from 'react'
-import CommingSoon from "@/components/ComingSoon";
-import AboutSection from '@/components/AboutSection';
+import BlogSection from '@/components/BlogSection';
+import AboutIntro from '@/components/AboutIntro';
+
 
 const page = () => {
   return (
-    <div>
-      <CommingSoon />
-      {/* <AboutSection /> */}
+    <div className='bg-bone min-h-screen'>
+
+      {/* Introduction text */}
+      <AboutIntro />
+
+      {/* List of Blogs */}
+      <BlogSection/>
     </div>
   )
 }

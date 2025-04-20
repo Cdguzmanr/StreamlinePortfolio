@@ -13,7 +13,9 @@ const ProjectsSection: React.FC = () => {
         <h2 className="text-3xl font-bold text-center text-night mb-8">
           Featured Work
         </h2>
-        <ProjectsCarousel projects={featuredProjects} />
+        <div className="mx-3 xl:mx-0">
+          <ProjectsCarousel projects={featuredProjects} />
+        </div>
         <div className="text-center mt-8">
           <p className="text-raisin-black text-lg mb-4">
             Like what you see? Explore all my projects and discover more of my work.

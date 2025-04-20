@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { scrollToElement } from "@/components/utils/scrollToElement"; // adjust path as needed
 
 
 const Hero = () => {
@@ -52,11 +53,13 @@ const Hero = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.4 }}
             >
-              <Link href="/contact">
-                <button className="px-6 py-3 bg-white border border-gray-300 text-gray-800 font-semibold rounded-md hover:border-gray-500 transition-all">
-                  Get in Touch
-                </button>
-              </Link>
+              {/* Scroll to id='Footer' */}
+              <button
+                 onClick={() => scrollToElement("footer")}
+                className="px-6 py-3 bg-white border border-gray-300 text-gray-800 font-semibold rounded-md hover:border-gray-500 transition-all"
+              >
+                Get in Touch
+              </button>
             </motion.div>
           </div>
         </motion.div>
