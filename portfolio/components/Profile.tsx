@@ -18,7 +18,7 @@ const Profile = () => {
         <h2 className="text-3xl md:py-2 md:text-5xl font-semibold">
           Carlos Guzman
         </h2>
-        <h3 className="text-xl py-2 md:text-2xl">Software Developer</h3>
+        <h3 className="text-xl py-2 md:text-2xl">Software Engineer I</h3>
 
         <p id='profilecard' className="text-md py-5 leading-8 text-white md:text-lg max-w-xl">
           I am passionate about technoloy and nature but my true love is the piano 🎹

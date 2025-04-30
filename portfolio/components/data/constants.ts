@@ -7,4 +7,5 @@ export const navItems = [
 
 export const Resume = "/Carlos Guzman - Software Engineer.pdf";
 
-export const Email = "contact@carlosguzmanr.com"
+export const Email = "cguzmanr17@gmail.com"
+// export const Email = "contact@carlosguzmanr.com"

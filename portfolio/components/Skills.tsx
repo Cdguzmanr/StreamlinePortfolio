@@ -14,7 +14,8 @@ import {
   SiAzuredevops,
   SiTailwindcss,
   SiTypescript,
-  SiDotnet
+  SiDotnet,
+  SiJquery, 
 } from "react-icons/si";
 import {
   FaPython,
@@ -49,8 +50,9 @@ const Skills = () => {
       category: "Frameworks & Libraries",
       skills: [
         { name: ".Net Core", icon: <SiDotnet />, star: true },
-        { name: "React", icon: <FaReact /> },
+        { name: "jQuery", icon: <SiJquery />, star: true },
         { name: "Node.js", icon: <FaNodeJs /> },
+        { name: "React", icon: <FaReact /> },
         { name: "Tailwind CSS", icon: <SiTailwindcss /> },
         { name: "Unity", icon: <FaUnity /> },
       ],
