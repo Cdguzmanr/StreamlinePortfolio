@@ -21,7 +21,7 @@ const Profile = () => {
         <h3 className="text-xl py-2 md:text-2xl">Software Engineer I</h3>
 
         <p id='profilecard' className="text-md py-5 leading-8 text-white md:text-lg max-w-xl">
-          I am passionate about technoloy and nature but my true love is the piano 🎹
+          I am passionate about technology and nature but my true love is the piano 🎹
           My technical strenghts are <strong>ASP.Net core</strong> and <strong>C#</strong> development, although I have broad skills in different areas like <strong>Unity 3D</strong> development, <strong>UX Design</strong>, and <strong>Communcations</strong>. 
 
         </p>
