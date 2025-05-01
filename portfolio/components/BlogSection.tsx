@@ -73,7 +73,7 @@ const BlogSection: React.FC = () => {
 
 
         {/* Stories Body Section */}
-        <section className="max-w-3xl md:max-w-3xl md:flex md:flex-row mb-6 md:ml-3"> 
+        <section className="max-w-3xl md:max-w-3xl md:flex md:flex-col mb-6 md:ml-3"> 
           
           {/* Main container */}
           <div className="bg-white rounded-lg border">
@@ -143,7 +143,13 @@ const BlogSection: React.FC = () => {
                 </div>
               ))}
             </div>
+            {/* Note to visitors about more stories coming soon */}
           </div>
+
+          <div className="w-full text-center mt-6 px-6 md:px-14 text-sm text-gray-500">
+            I'm just getting started — more stories about my awards, international events, and life-changing experiences are coming soon. Stay tuned!
+          </div>
+
         </section>
       </div>
     </div>
