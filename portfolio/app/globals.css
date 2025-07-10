@@ -112,3 +112,16 @@ body {
     .slick-next:before {
         color: black !important;
     }
+
+
+/* Markdown formating */
+.markdown h2 {
+  font-size: x-large;
+  font-weight: bold;
+  color: #2274A5;
+}
+.markdown li {
+  margin-left: 1em;
+  list-style-type: disc;
+
+}

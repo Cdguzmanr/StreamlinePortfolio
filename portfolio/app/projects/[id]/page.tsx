@@ -81,7 +81,7 @@ const ProjectDetail = () => {
                           </div>
 
                           {/* Project Description */}
-                          <div className="mb-16 space-y-4 text-raisin-black text-md md:text-lg leading-relaxed list-decimal">
+                          <div className="markdown mb-16 space-y-4 text-raisin-black text-md md:text-lg leading-relaxed list-decimal">
                             <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks]}>
                               {project.description}
                             </ReactMarkdown>
@@ -111,7 +111,7 @@ const ProjectDetail = () => {
                               className="inline-block bg-poppy text-white px-6 py-3 rounded-md hover:bg-orange transition-colors duration-300 text-base md:text-lg"
                               
                             >
-                              View on GitHub
+                              View Source
                             </a>
                           </div>
 
