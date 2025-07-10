@@ -28,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         </h3>
         <div className="flex justify-center">
           <img
-            src={project.image}
+            src={project.images[0]}
             alt={project.title}
             className="rounded-md object-cover max-h-48"
           />

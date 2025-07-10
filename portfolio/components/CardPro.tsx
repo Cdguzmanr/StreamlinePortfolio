@@ -21,9 +21,9 @@ const CardPro: React.FC<ProjectCardProps> = ({ project }) => {
   };
 
   return (
-    <div className="pt-2 relative flex w-81 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md hover:shadow-lg transition-shadow duration-300 h-full">
+    <div className="pt-2 relative flex w-81 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md hover:bg-neutral-100 hover:shadow-lg transition-all duration-300 h-full">
       <img
-        src={project.image}
+        src={project.images[0]}
         alt={project.title}
         onClick={handleViewProject}
         className="relative mx-4 -mt-6 h-40 overflow-clip rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r"
@@ -52,7 +52,7 @@ const CardPro: React.FC<ProjectCardProps> = ({ project }) => {
           onClick={handleViewProject}
           data-ripple-light="true"
           type="button"
-          className="select-none rounded-lg bg-ucla-blue py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+          className="select-none rounded-lg bg-ucla-blue py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none duration-300"
         >
           Read More
         </button>

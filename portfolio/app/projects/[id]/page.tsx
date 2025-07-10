@@ -6,6 +6,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkBreaks from "remark-breaks";
 import PageLoad from "@/app/template";
+import ImageCarousel from "@/components/ImageCarousel";
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -62,13 +63,21 @@ const ProjectDetail = () => {
 
                           {/* Project Image */}
                           <div className="mb-8 lg:max-w-2xl mx-auto">
-                            <div className="overflow-hidden rounded-lg shadow-lg">
-                              <img
-                                src={project.image}
+
+                            {/* Display Images in a carousel, if available */}
+                            {project.images.length > 1 ? (
+                              <div className="max-w-2xl max-h-96 mx-auto px-6 mb-10">
+                                <ImageCarousel imagesUrl={project.images} />
+                              </div>
+                            ) : (
+                              <div className="overflow-hidden rounded-lg shadow-lg">
+                                <img
+                                src={project.images[0]}
                                 alt={project.title}
                                 className="w-full h-auto object-cover"
-                              />
-                            </div>
+                                />
+                              </div>
+                            )}
                           </div>
 
                           {/* Project Description */}

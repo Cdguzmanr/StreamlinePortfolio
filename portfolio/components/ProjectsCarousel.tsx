@@ -16,9 +16,13 @@ const ProjectsCarousel: React.FC<ProjectsCarouselProps> = ({ projects }) => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
+    // Autoplay
+    autoplay: true,
+    autoplaySpeed: 8000,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,
