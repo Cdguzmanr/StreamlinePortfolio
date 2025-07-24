@@ -2,6 +2,7 @@
 import React from 'react';
 import { Project } from "@/components/IProject";
 import { useRouter } from "next/navigation";
+import PlayBtn from './PlayBtn';
 
 interface ProjectCardProps {
     project: Project;
@@ -47,7 +48,8 @@ const CardPro: React.FC<ProjectCardProps> = ({ project }) => {
           {project.summary}
         </p>
       </div>
-      <div className="p-6 pt-0 mt-auto">
+
+      <div className="p-6 pt-0 mt-auto flex flex-row gap-8">
         <button
           onClick={handleViewProject}
           data-ripple-light="true"
@@ -55,8 +57,15 @@ const CardPro: React.FC<ProjectCardProps> = ({ project }) => {
           className="select-none rounded-lg bg-ucla-blue py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none duration-300"
         >
           Read More
-        </button>
+        </button>  
+
+        {/* Display if there is a game link available */}
+        {project.play &&
+          <PlayBtn gameLink={project.play} />
+        }
+          
       </div>
+      
     </div>
 
   );

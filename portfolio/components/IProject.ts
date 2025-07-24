@@ -9,5 +9,6 @@ export interface Project {
     description: string; // larger text to display in the focused project view
     video: string; // embeded youtube video link
     link: string; //link to the git-hub repo with the source code 
+    play: string;
   }
   

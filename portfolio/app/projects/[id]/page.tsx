@@ -7,6 +7,7 @@ import remarkGfm from "remark-gfm";
 import remarkBreaks from "remark-breaks";
 import PageLoad from "@/app/template";
 import ImageCarousel from "@/components/ImageCarousel";
+import PlayBtn from '@/components/PlayBtn';
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -103,7 +104,7 @@ const ProjectDetail = () => {
                           </div>
 
                           {/* GitHub Button */}
-                          <div className="text-center">
+                          <div className="flex flex-row justify-center items-center gap-8">
                             <a
                               href={project.link}
                               target="_blank"
@@ -113,9 +114,12 @@ const ProjectDetail = () => {
                             >
                               View Source
                             </a>
-                          </div>
 
-                        
+                            {/* Display if there is a game link available */}
+                            {project.play &&
+                              <PlayBtn gameLink={project.play} />
+                            }
+                          </div>
                         </div>
                     </div>
                 </div>
