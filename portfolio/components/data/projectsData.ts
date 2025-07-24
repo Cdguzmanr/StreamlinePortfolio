@@ -64,7 +64,7 @@ export const projectsData: Project[] = [
     images: ["/images/GroceryListDemo.png"],
     categories: ["Java", "Android", "API"],
     summary: "A mobile app built in Android Studio to manage grocery lists, featuring API authentication, item tracking, and camera integration for adding images.",
-    description: "**Grocery List** is a **mobile app** developed in *Android Studio* as part of my *Mobile Development* course. The project focused on integrating **APIs** to manage data between views.\n\n## Core Features:\n1. **Login & Profile Management:** Users enter their name, which is verified against an API managed by our instructor (*Brian Foote*). If the profile exists, their grocery list is retrieved; otherwise, they are prompted to create an account.\n2. **Grocery List Management:** Displays a list of grocery items, each with a name, image, and checkbox for tracking. Users can navigate between different list views (*master list, marked items, etc.*).\n3. **Item Modification & Camera Integration:** Users can add new items, edit details, and capture images using their phone’s camera, offering a hands-on experience with Android device functionalities.\n\nThis project strengthened my skills in **Android development**, **API handling**, and **camera integration**, allowing me to build a fully interactive and dynamic mobile experience.",
+    description: "**Grocery List** is a **mobile app** developed in *Android Studio* as part of my *Mobile Development* course. The project focused on integrating **APIs** to manage data between views.\n\n## Key Features:\n1. **Login & Profile Management:** Users enter their name, which is verified against an API managed by our instructor (*Brian Foote*). If the profile exists, their grocery list is retrieved; otherwise, they are prompted to create an account.\n2. **Grocery List Management:** Displays a list of grocery items, each with a name, image, and checkbox for tracking. Users can navigate between different list views (*master list, marked items, etc.*).\n3. **Item Modification & Camera Integration:** Users can add new items, edit details, and capture images using their phone’s camera, offering a hands-on experience with Android device functionalities.\n\nThis project strengthened my skills in **Android development**, **API handling**, and **camera integration**, allowing me to build a fully interactive and dynamic mobile experience.",
     video: "https://www.youtube.com/embed/XUImmFdMdQI?si=fcgH174Ce_Rr1z9R",
     link: "https://github.com/Cdguzmanr/Android-GroceryList"
   },
@@ -75,7 +75,7 @@ export const projectsData: Project[] = [
     images: ["/images/GalleryAppDemo.jpg"],
     categories: ["Java", "Android"],
     summary: "An Android app displaying image-text cards with data imported from external files, featuring animations and an interactive flipping effect.",
-    description: "**Gallery App** is a **mobile application** developed in *Android Studio* as part of my *Mobile Development* course. The project focused on importing **text data from external files** to improve data management and dynamically display content.\n\n## Core Features:\n1. **Card-Based Display:** Each card presents an image and text on the front and back. I chose to showcase *touristic areas of Costa Rica*, making the app both functional and visually engaging.\n2. **Data Import from External Files:** Reads text data from `.txt` files, making the project more structured and scalable.\n3. **Custom Animations & Card Flipping:** Implemented visual enhancements beyond the class requirements, adding animations for flipping and transitioning between cards.\n\nAs one of my **first Android projects**, this app reflects my early exploration of **front-end design**, **data handling**, and **animation effects**. While my technical skills were still developing, my motivation to push beyond expectations set the foundation for my continuous learning and growth as a developer.",
+    description: "**Gallery App** is a **mobile application** developed in *Android Studio* as part of my *Mobile Development* course. The project focused on importing **text data from external files** to improve data management and dynamically display content.\n\n## Key Features:\n1. **Card-Based Display:** Each card presents an image and text on the front and back. I chose to showcase *touristic areas of Costa Rica*, making the app both functional and visually engaging.\n2. **Data Import from External Files:** Reads text data from `.txt` files, making the project more structured and scalable.\n3. **Custom Animations & Card Flipping:** Implemented visual enhancements beyond the class requirements, adding animations for flipping and transitioning between cards.\n\nAs one of my **first Android projects**, this app reflects my early exploration of **front-end design**, **data handling**, and **animation effects**. While my technical skills were still developing, my motivation to push beyond expectations set the foundation for my continuous learning and growth as a developer.",
     video: "https://www.youtube.com/embed/35e5nI2LJzQ?si=2Cs65NG9Vx0Yx2xD",
     link: "https://github.com/Cdguzmanr/Android-GalleryApp"
   },
@@ -93,6 +93,23 @@ export const projectsData: Project[] = [
     \n- **Email sender** integration to notify the OCEPI committee about new form submissions`,
     video: "https://www.youtube.com/embed/rFljYV70tZo?si=FJYjD818N9JRh8h4",
     link: "https://www.icactaskforce.org/OCEPI"
+  },
+  {
+    id: 9,
+    featured: true,
+    title: "ICAC Training Meeting Times",
+    images: ["/images/ICACMeetingTimes.jpg"],
+    categories: [".Net", "API", "SQL", "jQuery"],
+    summary: "New feature to allow Admins to add and modify Meeting times for Training Instances in all ICAC web platforms",
+    description: `During my time as a Software Engineer for the *National Criminal Justice Training Center* (NCJTC), our team was requested to design a way to manage and display meeting times for the different trainings available in the **Internet Crimes Against Children Taskforce** (ICAC) website.\n\nTo achieve this, I created a new section in the **Training Details** page of ICAC Admin's site, so that staff members can **modify the Day of week and time schedule**. All changes saved in this page would then reflect at the Training Details page of ICAC's public site.\n\n## Main Features:
+    \n- On/Off **toggle** to enable Meeting Times feature and display data in public site
+    \n- Dropdown to select Time Zone
+    \n- **Dropdown** to select Day of Week based on Training's Start and End Date
+    \n- +Add and -Remove buttons to manage several schedules as needed
+    \n- Integration with FVTC's **API** to reflect instant changes from Admin site into the Public site
+    \n- **Database** connection to store changes on Update`,
+    video: "https://www.youtube.com/embed/qilCFrIhE6A?si=ZfTR6sLGCdLb21kF",
+    link: "https://www.icactaskforce.org/search-results"
   },
   
   
