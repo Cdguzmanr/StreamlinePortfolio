@@ -49,7 +49,7 @@ const CardPro: React.FC<ProjectCardProps> = ({ project }) => {
         </p>
       </div>
 
-      <div className="p-6 pt-0 mt-auto flex flex-row gap-8">
+      <div className="p-6 pt-0 mt-auto flex flex-row gap-4 md:gap-8">
         <button
           onClick={handleViewProject}
           data-ripple-light="true"
