@@ -37,7 +37,7 @@ const ProjectsPage: React.FC = () => {
 
   // Filter projects based on selected categories and search query.
   const filteredProjects = useMemo(() => {
-    return projectsData.filter((project) => {
+    const filtered = projectsData.filter((project) => {
       const matchesCategory =
         selectedCategories.length === 0 ||
         project.categories.some((cat) =>
@@ -47,6 +47,21 @@ const ProjectsPage: React.FC = () => {
         .toLowerCase()
         .includes(searchQuery.toLowerCase());
       return matchesCategory && matchesSearch;
+    });
+
+    // Sort by tier DESC, then by date DESC (newest first)
+    return filtered.sort((a, b) => {
+      if (b.tier !== a.tier) {
+        return b.tier - a.tier; // Higher tier first
+      }
+
+      // Convert date strings to Date objects for comparison
+      const dateA = new Date(`${a.date}-01`);
+      const dateB = new Date(`${b.date}-01`);
+      return dateB.getTime() - dateA.getTime(); // Newest first
+
+      // ⬇️ To sort oldest first, just flip the subtraction:
+      // return dateA.getTime() - dateB.getTime();
     });
   }, [selectedCategories, searchQuery]);
 
@@ -107,7 +122,7 @@ const ProjectsPage: React.FC = () => {
               placeholder="Search projects..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="px-4 py-2 border border-gray-300 rounded-md w-full md:w-64 focus:outline-none focus:ring-2 focus:ring-ucla-blue"
+              className="px-4 py-2 border border-gray-300 text-black rounded-md w-full md:w-64 focus:outline-none focus:ring-2 focus:ring-ucla-blue"
             />
           </div>
         </div>

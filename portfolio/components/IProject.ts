@@ -1,6 +1,8 @@
 // src/types.ts
 export interface Project {
     id: number,
+    tier: number; // used to order display (descendent). lower means less impressive, higher will display first.
+    date: string; // Format: "2024-07" (month + year)
     featured: boolean, // display at the "ProjectsSection" on the Home page
     title: string;
     images: Array<string>;

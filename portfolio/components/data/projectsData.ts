@@ -1,9 +1,19 @@
 // src/projects.ts
+
+/* Tier Description:
+Tier 4: Large Projects. Important. Must have a link for user to try/test.  
+Tier 3: Work-related projects. Important. Examples of experience.
+Tier 2: Medium-sized projects. Semi-important. Completed 
+Tier 1: Small/simple projects. Not important. Incomplete
+*/
+
 import { Project } from '../IProject'; // Import the interface
 
 export const projectsData: Project[] = [
     {
     id: 1,
+    tier: 4,
+    date: "2024-05",
     featured: true,
     title: "Uno Park",
     images: ["/images/UnoHome.png"],
@@ -13,10 +23,11 @@ export const projectsData: Project[] = [
     video: "https://www.youtube.com/embed/H7cmYf08RQY?feature=oembed",
     link: "https://github.com/Cdguzmanr/UnoPark-Unity.git",
     play: "https://play.unity.com/en/games/892bb4cc-a19a-4142-9b00-5ecce18e1062/uno-park"
- 
   },
   {
     id: 2,
+    tier: 1,
+    date: "2024-04",
     featured: false,
     title: "The Hobby Hub",
     images: ["/images/TheHobbyHubHome.png"],
@@ -29,11 +40,13 @@ export const projectsData: Project[] = [
   },
   {
     id: 3,
+    date: "2024-03",
+    tier: 2,
     featured: true,
     title: "DVD Central",
     images: ["/images/DVDCentral3.png"],
     categories: [".Net", "C#", "API",],
-    summary: "A scalable web application built using ASP.NET MVC and Microsoft SQL Server.",
+    summary: "A scalable e-commerce web application built using ASP.NET MVC and Microsoft SQL Server.",
     description: `DVD Central is the main project developed in my ASP.Net class (3rd Term), and half of Advanced Software Development (4th term). \n\nThe project was **developed individually** to practice and improve the knowledge worked in class, including Object Oriented Programming (OOP), **ASP .Net**, **Model-View-Controller (MVC)**, **Mode-View-Viewmodel (MVVM)**, Source control using **Git**, **Microsoft Azure** (DevOps, SQL Database, API Keys), Visual Studio development environment, among others.`,
     video: "https://www.youtube.com/embed/tHnoCH-a7KA?feature=oembed",
     link: "https://github.com/Cdguzmanr/DVDCentral_Advanced.git",
@@ -41,6 +54,8 @@ export const projectsData: Project[] = [
   },
   {
     id: 4,
+    date: "2022-03",
+    tier: 2,
     featured: true,
     title: "Criptografia",
     images: ["/images/Criptografia.jpg"],
@@ -53,6 +68,8 @@ export const projectsData: Project[] = [
   },
   {
     id: 5,
+    date: "2023-05",
+    tier: 2,
     featured: true,
     title: "Space Fighters",
     images: ["/images/SpaceFighters.jpg"],
@@ -65,6 +82,8 @@ export const projectsData: Project[] = [
   },
   {
     id: 6,
+    date: "2024-02",
+    tier: 1,
     featured: false,
     title: "Grocery List",
     images: ["/images/GroceryListDemo.png"],
@@ -77,6 +96,8 @@ export const projectsData: Project[] = [
   },
   {
     id: 7,
+    tier: 1,
+    date: "2024-03",
     featured: false,
     title: "Gallery App",
     images: ["/images/GalleryAppDemo.jpg"],
@@ -89,6 +110,8 @@ export const projectsData: Project[] = [
   },
   {
     id: 8,
+    tier: 3,
+    date: "2025-05",
     featured: true,
     title: "OCEPI Contact Form",
     images: ["/images/OCEPI-Contact1.png"],
@@ -105,6 +128,8 @@ export const projectsData: Project[] = [
   },
   {
     id: 9,
+    tier: 3,
+    date: "2025-06",
     featured: true,
     title: "ICAC Training Meeting Times",
     images: ["/images/ICACMeetingTimes.jpg"],
