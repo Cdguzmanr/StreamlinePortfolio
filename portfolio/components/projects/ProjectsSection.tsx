@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import ProjectsCarousel from "./ProjectsCarousel";
-import { projectsData } from "./data/projectsData";
+import ProjectsCarousel from "@/components/projects/ProjectsCarousel";
+import { projectsData } from "@/components/data/projectsData";
 
 const ProjectsSection: React.FC = () => {
   // Filter featured projects

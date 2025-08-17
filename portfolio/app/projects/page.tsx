@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectsPage from '@/components/ProjectsPage'
+import ProjectsPage from '@/components/projects/ProjectsPage2'
 import { Suspense } from "react";
 
 const page = () => {

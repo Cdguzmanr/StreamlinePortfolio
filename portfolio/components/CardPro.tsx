@@ -1,8 +1,8 @@
 
 import React from 'react';
-import { Project } from "@/components/IProject";
 import { useRouter } from "next/navigation";
-import PlayBtn from './PlayBtn';
+import { Project } from "@/components/IProject";
+import PlayBtn from '@/components/PlayBtn';
 
 interface ProjectCardProps {
     project: Project;
@@ -30,9 +30,9 @@ const CardPro: React.FC<ProjectCardProps> = ({ project }) => {
         className="relative mx-4 -mt-6 h-40 overflow-clip rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r"
       />
       <div className="flex flex-col flex-grow px-6 pt-6 pb-2">
-        <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+        <h2 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
           {project.title}
-        </h5>
+        </h2>
         <div className='pb-2'>
           {project.categories.map((category, index) => (
             <button
@@ -49,7 +49,7 @@ const CardPro: React.FC<ProjectCardProps> = ({ project }) => {
         </p>
       </div>
 
-      <div className="p-6 pt-0 mt-auto flex flex-row gap-4 md:gap-8">
+      <div className="p-6 pt-0 mt-auto flex flex-row justify-between items-center">
         <button
           onClick={handleViewProject}
           data-ripple-light="true"

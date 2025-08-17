@@ -29,5 +29,8 @@ npm i --save @fortawesome/free-brands-svg-icons
 → Shortcut to create new react .tsx file: rafce + tab
 → To create a different page: add folders inside app with the desired page name (about, contact, etc). Then, create a page.tsx file for each (equivalence to index.html). Call the desired components from the page.tsx files to build the page.
 → Push to github: (1) git add . | (2) git commit -m "message" | (3) git push 
-→ Create a new code snippet (used for 'proj' template): ctrl+Shift+p ->  'Snippets: Configure Snippets' -> typescript.json -> Add a new item to the Snippets array.
+→ Create a new code snippet (used for 'proj' template): ctrl+Shift+p ->  'Snippets: Configure Snippets' -> typescript.json → Add a new item to the Snippets array.
 
+** Learning Notes **
+→ .ts (TypeScript) is used for files with only TypeScript code — like utility functions, interfaces, constants, types, and config files. No JSX allowed here.
+→ .tsx (TypeScript + JSX) is used for files that contain JSX or React components, like return (<div>Hello</div>). Must  use .tsx if the file includes any JSX (JavaScript XML).

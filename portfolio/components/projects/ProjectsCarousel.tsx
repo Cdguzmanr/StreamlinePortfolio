@@ -1,7 +1,8 @@
 import React from "react";
 // import ProjectCard from "./ProjectCard";
-import ProjectCard from "./CardPro";
-import { Project } from "./IProject";
+import ProjectCard from "@/components/CardPro";
+import { Project } from "@/components/IProject";
+import { sortProjects } from "@/utils/sortProjects";
 
 // Import a carousel library, such as react-slick
 import Slider from "react-slick";
@@ -39,9 +40,12 @@ const ProjectsCarousel: React.FC<ProjectsCarouselProps> = ({ projects }) => {
     ],
   };
 
+  // Sort by tier DESC, then by date DESC (newest first)
+  const sortedProjects = sortProjects(projects);
+
   return (
     <Slider {...settings}>
-      {projects.map((project) => (
+      {sortedProjects.map((project) => (
         // The Card has a max limit of 4 lines of text for the description, which fits perfectly in 455 pixels
         <div key={project.id} className="px-3 py-4 h-[455px]"> 
           <ProjectCard project={project} />
