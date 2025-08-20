@@ -17,7 +17,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ imagesUrl }) => {
     slidesToScroll: 1,
     // Autoplay
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 5000,
     pauseOnHover: true,
 
   };
