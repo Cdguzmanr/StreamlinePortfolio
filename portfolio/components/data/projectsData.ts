@@ -89,7 +89,7 @@ export const projectsData: Project[] = [
     images: ["/images/GroceryListDemo.png"],
     categories: ["Java", "Android", "API"],
     summary: "A mobile app built in Android Studio to manage grocery lists, featuring API authentication, item tracking, and camera integration for adding images.",
-    description: "**Grocery List** is a **mobile app** developed in *Android Studio* as part of my *Mobile Development* course. The project focused on integrating **APIs** to manage data between views.\n\n## Key Features:\n1. **Login & Profile Management:** Users enter their name, which is verified against an API managed by our instructor (*Brian Foote*). If the profile exists, their grocery list is retrieved; otherwise, they are prompted to create an account.\n2. **Grocery List Management:** Displays a list of grocery items, each with a name, image, and checkbox for tracking. Users can navigate between different list views (*master list, marked items, etc.*).\n3. **Item Modification & Camera Integration:** Users can add new items, edit details, and capture images using their phone’s camera, offering a hands-on experience with Android device functionalities.\n\nThis project strengthened my skills in **Android development**, **API handling**, and **camera integration**, allowing me to build a fully interactive and dynamic mobile experience.",
+    description: "**Grocery List** is a **mobile app** developed in *Android Studio* as part of my *Mobile Development* course. The project focused on integrating **APIs** to manage data between views.\n\n## Key Features:\n1. **Login & Profile Management:** Users enter their name, which is verified against an API managed by our instructor (*Brian Foote*). If the profile exists, their grocery list is retrieved; otherwise, they are prompted to create an account.\n2. **Grocery List Management:** Displays a list of grocery items, each with a name, image, and checkbox for tracking. Users can navigate between different list views (*master list, marked items, etc.*).\n3. **Item Modification & Camera Integration:** Users can add new items, edit details, and capture images using their phone's camera, offering a hands-on experience with Android device functionalities.\n\nThis project strengthened my skills in **Android development**, **API handling**, and **camera integration**, allowing me to build a fully interactive and dynamic mobile experience.",
     video: "https://www.youtube.com/embed/XUImmFdMdQI?si=fcgH174Ce_Rr1z9R",
     link: "https://github.com/Cdguzmanr/Android-GroceryList",
     play: ""
@@ -155,8 +155,8 @@ export const projectsData: Project[] = [
     images: ["/images/NCJTCHome.jpeg","/images/NCJTCPayments01.png", "/images/NCJTCPayments02.png"],
     categories: [".Net", "API", "jQuery" ],
     summary: "A major refactoring and optimization project to improve the loading speed and usability of NCJTC's payments page, reducing load times in half, and implementing new features for a smoother user experience.",
-    description: `As the main software engineer at the **National Criminal Justice Training Center (NCJTC)**, I identified and resolved a critical performance issue with the organization's payments page. Previously, users had to wait up to half a minute for the page to load, often causing browsers to freeze or mark the site as *“not responding.”* This issue stemmed from synchronous JavaScript calls and inefficient controller logic that attempted to load all data (registrations, organizations, and payment requests) upfront.
-    \n\nTo address this, I **redesigned the page's backend and frontend workflows:**
+    description: `As the main software engineer at the **National Criminal Justice Training Center (NCJTC)**, I identified and resolved a critical performance issue with the organization's payments page. Previously, users had to wait up to half a minute for the page to load, often causing browsers to freeze or mark the site as *“not responding.”* This issue stemmed from synchronous JavaScript calls and inefficient controller logic that attempted to load all data (registrations, organizations, and payment requests) upfront. To address this, I **redesigned the page's backend and frontend workflows.**
+    \n\n## Main Tasks: 
     \n- Refactored the **Payments controller** to handle large datasets asynchronously, loading the BillMyOrg modal and Payment History section in the background.
     \n- Implemented **loading placeholder animations** to provide a smoother user experience while data loads.
     \n- Optimized JavaScript functions and controller methods, allowing the **Payments Page to load instantly**, and cutting the **data load time by more than half**.
@@ -165,6 +165,5 @@ export const projectsData: Project[] = [
     link: "https://ncjtc.fvtc.edu",
     play: ""
   },
-  
   
 ];
