@@ -3,6 +3,12 @@ import bundleAnalyzer from '@next/bundle-analyzer';
 
 const nextConfig: NextConfig = {
   /* config options here */
+  output: 'standalone',
+  experimental: {
+    optimizePackageImports: [
+      'lucide-react', 
+    ],
+  },
 };
 
 const withBundleAnalyzer = bundleAnalyzer({
